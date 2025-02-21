@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('images/banner.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;        
+        }
+        @media(max-width:460px){
+            h1{
+                font-size: 16px;
+                color:blue;
+                text-align: center;
+            }
+        }
+        @media(max-width: 1024px){
+    .four-col-section{
+       grid-template-columns: repeat(2, 1fr); 
+    }
+}
+.banner-section img{
+    width: 100%;
+    height: 300px;
+}
+.two-col-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.two-col{
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    border: 2px solid rgb(226, 43, 43);
+}
+.four-col-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.four-col{
+    text-align: center;
+    padding: 20px;
+    border:2px solid blueviolet;
+    box-shadow: 2px 2px 10px;
+}
+.four-col-img{
+    border-radius: 20px;
+    width: 80px;
+}
+
+@media(max-width: 480px){
+    .four-col-section{
+       grid-template-columns: 1fr; 
+    }
+    .two-col-section{
+        grid-template-columns: 1fr;
+    }
+}
+        footer {
+            background: radial-gradient(circle, #0011ff, #00800b);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body></body>
+    
+    <div class="banner">
+
+    </div>
+    <h1>Vetri Technology Solutions</h1>
+ 
+<section class="two-col-section">
+    <div class="two-col">
+        <p>VTS is an IT Startup from Surandai and was originated from VETRI ACADEMY which was found in the Year of 2021 at Surandai.</p>
+    </div>
+    <div class="two-col">
+        <p>We placed 20+ students in the Various IT/Banks with our Placement Training being provided.</p>
+
+    </div>
+</section>
+<section class="four-col-section">
+    <div class="four-col">
+        <img src="images/vts1.jpg" width="200px" height="250px">
+        <h1>VTS</h1>
+        <p class="team-member-desc">Learn and Grow</p>
+    </div>
+    <div class="four-col">
+        <img src="images/vts2.jpg" width="200px" height="250px">
+        <h1>VTS</h1>
+        <p class="team-member-desc">Learn and Grow</p> 
+    </div>
+    <div class="four-col">
+        <img src="e:\anitha\butterflies.jpg" width="100px">
+        <img src="images/vts3.jpg" width="200px" height="250px">
+        <h1>VTS</h1>
+        <p class="team-member-desc">Learn and Grow</p> 
+    </div>
+    <div class="four-col">
+        <img src="images/vts4.jpg" width="200px" height="250px">
+        <h1>VTS</h1>
+        <p class="team-member-desc">Learn and Grow</p>
+
+    </div>
+    </div>
+        </section>
+        <footer>
+            2025 Vetri IT Solutions | All Rights Reserved
+           </footer>
+</body>
+</html>
