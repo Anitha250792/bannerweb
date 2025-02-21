@@ -73,15 +73,24 @@
         grid-template-columns: 1fr;
     }
 }
-        footer {
-            background: radial-gradient(circle, #0011ff, #00800b);
+.footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            background-color: #0a0557;
             color: white;
-            text-align: center;
             padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            text-align: center;
         }
+        .footer div {
+            padding: 10px;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        } 
     </style>
 </head>
 <body></body>
@@ -125,8 +134,22 @@
     </div>
     </div>
         </section>
-        <footer>
-            2025 Vetri IT Solutions | All Rights Reserved
-           </footer>
+        <footer class="footer">
+            <div>
+                <h3>About Us</h3>
+                <p>We provide quality services and products to our customers worldwide.</p>
+            </div>
+            <div>
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </footer>
 </body>
 </html>
